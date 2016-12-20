@@ -35,9 +35,9 @@ int main()
     while (iter != vi.end()) {
         if (*iter % 2) {
             iter = vi.insert(iter, *iter);
-            ++iter;
+            iter+=2;//c.insert(p,t):insert element t before iterator p,then return to the iterator of the newly added element t.so we need to forward 2 space.
         }
-        ++iter;
+       else ++iter;//add else
     }
 
     for (auto i : vi) cout << i << " ";
