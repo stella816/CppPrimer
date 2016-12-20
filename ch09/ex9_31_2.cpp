@@ -28,7 +28,7 @@ int main()
     while (iter != vi.end()) {
         if (*iter % 2) {
             iter = vi.insert_after(prev, *iter);
-            advance(iter, 2);
+            advance(iter, 1); //insert_after returns to the iteratot of the latest addedd element
             advance(prev, 2);
         }
         else
